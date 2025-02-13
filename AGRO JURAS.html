@@ -1,0 +1,504 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRO JURAS - Maszyny Rolnicze i Części</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <script>
+        function toggleDropdown(id) {
+            document.getElementById(id).classList.toggle("hidden");
+        }
+    </script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+       <!-- Nagłówek -->
+    <header class="bg-green-700 text-white p-4 text-center text-2xl font-bold">
+        <img src="images/logo.png" alt="Logo firmy" class="h-20 inline-block">
+        AGRO JURAS - Maszyny Rolnicze i Części
+    </header>
+<!-- Nawigacja -->
+    <nav class="bg-green-600 p-3 text-white text-center">
+        <a href="#" class="px-4">Strona Główna</a>
+
+        <div class="dropdown inline-block relative">
+            <button class="px-4 inline-flex items-center">
+        <span class="px-4">Maszyny</span>
+        <svg class="fill-current h-4 w-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+        </svg>
+    </button>
+    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 bg-white shadow-lg w-40">
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Kombajny">Kombajny</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Traktory">Traktory</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Prasy">Prasy</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Przyczepy i Rozrzutniki">Przyczepy i Rozrzutniki</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Przegrabiarki">Przegrabiarki</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Pługi">Pługi</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Prasy">Prasy</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Kosiarki">Kosiarki</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Inne">Inne</a></li>
+    </ul>
+</div>
+<div class="dropdown inline-block relative">
+    <button class="px-4 inline-flex items-center">
+        <span class="px-4">Części</span>
+        <svg class="fill-current h-4 w-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+        </svg>
+    </button>
+    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 bg-white shadow-lg w-40">
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Łożyska">Łożyska</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Filtry">Filtry</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Zębatki">Zębatki</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Oleje">Oleje</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Paski Klinowe">Paski Klinowe</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Noże">Noże</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Lampy">Lampy</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Akumulatory">Akumulatory</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Rozruszniki">Rozruszniki</a></li>
+        <li><a class="block px-4 py-2 hover:bg-gray-200" href="#Inne">Inne</a></li>
+    </ul>
+</div>
+
+<script>
+    document.querySelector('.dropdown button').addEventListener('click', function() {
+        document.querySelector('.dropdown-menu').classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.dropdown')) {
+            document.querySelector('.dropdown-menu').classList.add('hidden');
+        }
+    });
+</script>
+
+        <a href="#kontakt" class="px-4">Kontakt i Adres</a>
+    </nav>
+
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+     
+
+ 
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    .dropdown-menu a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    .dropdown-menu a:hover {
+        background-color: #f1f1f1;
+    }
+</style>
+  
+    
+    <section id="maszyny" class="container mx-auto p-5">
+        <h2 class="text-3xl font-semibold text-center mb-5">Maszyny Rolnicze</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  </section>
+    
+   
+
+       <section id="Kombajny" class="container mx-auto p-5">
+        	<h2 class="text-3xl font-semibold text-center mb-5">Kombajny</h2>
+        	<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+	
+
+	<!-- dodana maszyna pierwsza --> 
+          <div class="bg-white p-4 shadow-lg rounded-lg">
+           <a href="IMAGES//Kombajny//New holland TX32//1.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- pierwsze zdjęcie --> 
+           <a href="IMAGES//Kombajny//New holland TX32//2.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- drugie zdjęcie --> 
+           <a href="IMAGES//Kombajny//New holland TX32//3.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- trzecie zdjęcie --> 
+           <a href="IMAGES//Kombajny//New holland TX32//4.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- czwarte zdjęcie -->  
+           <a href="IMAGES//Kombajny//New holland TX32//5.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- drugie zdjęcie --> 
+           <a href="IMAGES//Kombajny//New holland TX32//6.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- trzecie zdjęcie --> 
+           <a href="IMAGES//Kombajny//New holland TX32//7.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- czwarte zdjęcie -->                 	
+	 	<img src="IMAGES//Kombajny//New holland TX32//1.jpg" alt="Kombajn New Holland" class="w-full h-48 object-cover"> <!-- Zdjęcie miniaturka na stronie głównej --> 
+            </a>
+                <h3 class="text-xl font-bold mt-3">New Holland TX32</h3>
+                <p class="text-gray-600">Nowoczesny kombajn z wysoką wydajnością.</p> <!-- opis maszyny--> 
+                <p class="text-green-700 font-bold mt-2">Cena: 120 000 zł NETTO</p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna pierwsza --> 
+
+<!-- dodana maszyna druga DOMINATOR 98s  --> 
+           <div class="bg-white p-4 shadow-lg rounded-lg">
+                <a href="IMAGES//Kombajny//New holland TX34//1.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Kombajny//New holland TX34//2.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Kombajny//New holland TX34//3.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- trzecie zdjęcie --> 
+                <a href="IMAGES//Kombajny//New holland TX34//4.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- czwarte zdjęcie -->  
+ 		<a href="IMAGES//Kombajny//New holland TX34//5.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Kombajny//New holland TX34//6.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Kombajny//New holland TX34//7.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- trzecie zdjęcie --> 
+                <a href="IMAGES//Kombajny//New holland TX34//8.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- czwarte zdjęcie -->  
+ 		<a href="IMAGES//Kombajny//New holland TX34//9.jpg" data-lightbox="maszyny" data-title="Kombajn New Holland"> <!-- czwarte zdjęcie -->                   
+                    <img src="IMAGES//Kombajny//New holland TX34//1.jpg" alt="Kombajn New Holland" class="w-full h-48 object-cover"> <!-- Zdjęcie miniaturka na stronie głównej --> 
+            </a>
+                <h3 class="text-xl font-bold mt-3">New holland TX34</h3>
+                <p class="text-gray-600">Nowoczesny kombajn z wysoką wydajnością.</p> <!-- opis maszyny--> 
+                <p class="text-green-700 font-bold mt-2">Cena: 120 000 zł NETTO</p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna druga --> 
+
+
+<!-- dodana maszyna trzecia Dominator 98s--> 
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <a href="IMAGES//Kombajny//Dominator 98s//11.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Kombajny//Dominator 98s//1.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Kombajny//Dominator 98s//2.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- trzecie zdjęcie -->  
+                <a href="IMAGES//Kombajny//Dominator 98s//3.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- czwarte zdjęcie -->  
+                    <img src="IMAGES//Kombajny//Dominator 98s//11.jpg" alt="Claas Dominator 98" class="w-full h-48 object-cover"> <!-- zdjęcie miniaturka na stronie głównej -->
+            </a>
+                <h3 class="text-xl font-bold mt-3">Claas Dominator 98</h3>
+                <p class="text-gray-600">Claas Dominator 98s Heder 4,5m,  z wysoką wydajnością.</p>
+                <p class="text-green-700 font-bold mt-2">Cena: 120 000 zł</p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna trzecia --> 
+
+
+<!-- dodana maszyna czwarta Dominator 108--> 
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <a href="IMAGES//Kombajny//Dominator108//11.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Kombajny//Dominator108//1.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Kombajny//Dominator108//2.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- trzecie zdjęcie -->  
+                <a href="IMAGES//Kombajny//Dominator108//3.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- czwarte zdjęcie -->  
+                    <img src="IMAGES//Kombajny//Dominator108//1.jpg" alt="Claas Dominator 98" class="w-full h-48 object-cover"> <!-- zdjęcie miniaturka na stronie głównej -->
+            </a>
+                <h3 class="text-xl font-bold mt-3">Claas Dominator 108</h3>
+                <p class="text-gray-600">Claas Dominator 98s Heder 5,1m,  z wysoką wydajnością.</p>
+                <p class="text-green-700 font-bold mt-2">Cena: 120 000 zł</p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna trzecia --> 
+</section>
+<!-- koniec sekcji Kombajny --> 
+
+
+       <section id="Traktory" class="container mx-auto p-5">
+        	<h2 class="text-3xl font-semibold text-center mb-5">Traktory</h2>
+        	<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+<!-- dodana maszyna czwarta Renault Cergos 355 --> 
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <a href="IMAGES//Traktory//Cergos 355//1.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Traktory//Cergos 355//2.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Traktory//Cergos 355//3.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- trzecie zdjęcie -->  
+                <a href="IMAGES//Traktory//Cergos 355//4.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- czwarte zdjęcie -->  
+                <a href="IMAGES//Traktory//Cergos 355//5.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- czwarte zdjęcie --> 
+                    <img src="IMAGES//Traktory//Cergos 355//1.jpg" alt="Renault Cergos 355" class="w-full h-48 object-cover"> <!-- Zdjęcie miniaturka na stronie głównej --> 
+            </a>
+                <h3 class="text-xl font-bold mt-3">Renault Cergos 355</h3>
+                <p class="text-gray-600">Nowoczesny kombajn z wysoką wydajnością.</p> <!-- opis maszyny--> 
+                <p class="text-green-700 font-bold mt-2">Cena: 80 000 zł NETTO </p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna czwarta --> 
+
+<!-- dodana maszyna  --> 
+            <div class="bg-white p-4 shadow-lg rounded-lg"> 
+                <a href="IMAGES//Traktory//6145R//1.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Traktory//6145R//2.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- trzecie zdjęcie -->  
+                <a href="IMAGES//Traktory//6145R//3.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie -->  
+                <a href="IMAGES//Traktory//6145R//4.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie --> 
+                    <img src="IMAGES//Traktory//6145R//1.jpg" alt="Renault Cergos 355" class="w-full h-48 object-cover"> <!-- Zdjęcie miniaturka na stronie głównej --> 
+            </a>
+                <h3 class="text-xl font-bold mt-3">Traktor John Deere 6145R </h3>
+                <p class="text-gray-600">Nowoczesny traktor z wysoką wydajnością.</p> <!-- opis maszyny--> 
+                <p class="text-green-700 font-bold mt-2">Cena: 200 000 zł </p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna --> 
+
+<!-- dodana maszyna  --> 
+
+
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <a href="IMAGES//Traktory//JD 6230//1.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Traktory//JD 6230//2.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Traktory//JD 6230//3.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- trzecie zdjęcie -->  
+                <a href="IMAGES//Traktory//JD 6230//4.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie -->  
+                <a href="IMAGES//Traktory//JD 6230//5.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie --> 
+                    <img src="IMAGES//Traktory//JD 6230//1.jpg" alt="JD 6230" class="w-full h-48 object-cover"> <!-- Zdjęcie miniaturka na stronie głównej --> 
+            </a>
+                <h3 class="text-xl font-bold mt-3">Traktor John Deere</h3>
+                <p class="text-gray-600">Nowoczesny traktor z wysoką wydajnością.</p> <!-- opis maszyny--> 
+                <p class="text-green-700 font-bold mt-2">Cena: 138 000 zł </p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna --> 
+
+<!-- dodana maszyna  --> 
+
+
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <a href="https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZvbnFyNnYwOWdwNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.44f-s_ZkgyR8diG8ibK7kpc_TEYQQ1XQC9fu6yEShYU/image;s=3824x0;q=100"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Traktory//Cergos 355//2.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Traktory//Cergos 355//3.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- trzecie zdjęcie -->  
+                <a href="IMAGES//Traktory//Cergos 355//4.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie -->  
+                <a href="IMAGES//Traktory//Cergos 355//5.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie --> 
+                    <img src="https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRud282NmFnemtjMjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2PE9PFGqbYSb-YJ6IsYyXD0fBxMB8sJDze_bes1BwEE/image;s=3824x0;q=100" alt="Traktor" class="w-full h-48 object-cover" alt="Renault Cergos 355" class="w-full h-48 object-cover"> <!-- Zdjęcie miniaturka na stronie głównej --> 
+            </a>
+                <h3 class="text-xl font-bold mt-3">Traktor John Deere</h3>
+                <p class="text-gray-600">Ładowarka Merllo.</p> <!-- opis maszyny--> 
+                <p class="text-green-700 font-bold mt-2">Cena: 200 000 zł </p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna --> 
+</section>
+<!-- koniec sekcji Traktory --> 
+
+
+       <section id="Prasy" class="container mx-auto p-5">
+        	<h2 class="text-3xl font-semibold text-center mb-5">Prasy</h2>
+        	<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- dodana maszyna  --> 
+
+
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <a href="IMAGES//Prasy//NH//1.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Prasy//NH//2.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Prasy//NH//3.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- trzecie zdjęcie -->  
+                <a href="IMAGES//Prasy//NH//4.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie -->  
+                <a href="IMAGES//Prasy//NH//5.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie --> 
+                    <img src="IMAGES//Prasy//NH//1.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- Zdjęcie miniaturka na stronie głównej --> 
+            </a>
+                <h3 class="text-xl font-bold mt-3">Prasa New Holland</h3>
+                <p class="text-gray-600">Nowoczesny traktor z wysoką wydajnością.</p> <!-- opis maszyny--> 
+                <p class="text-green-700 font-bold mt-2">Cena: 40 000 zł </p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna --> 
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="IMAGES//Traktory//Cergos 355//1.jpg" alt="Traktor" class="w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mt-3">Traktor John Deere</h3>
+                <p class="text-gray-600">Nowoczesny traktor z wysoką wydajnością.</p>
+                <p class="text-green-700 font-bold mt-2">Cena: 200 000 zł</p>
+                <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+            </div>
+
+
+
+<
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <a href="https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imk0dXplMTc4M3N6ZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.yznzKojP6SPObmWHu21gKUqEX9-aZWEcS7u8xuwYnfI/image;s=3824x0;q=100"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Dominator 98s//2.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Dominator 98s//3.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- trzecie zdjęcie -->  
+                <a href="IMAGES//Dominator 98s//4.jpg" data-lightbox="maszyny" data-title="Claas Dominator 98"> <!-- czwarte zdjęcie -->  
+                    <img src="IMAGES//Dominator 98s//1.jpg" alt="Claas Dominator 98" class="w-full h-48 object-cover"> <!-- zdjęcie miniaturka na stronie głównej -->
+            </a>
+                <h3 class="text-xl font-bold mt-3">Claas Dominator 98</h3>
+                <p class="text-gray-600">Claas Dominator 98s Heder 4,5m,  z wysoką wydajnością.</p>
+                <p class="text-green-700 font-bold mt-2">Cena: 120 000 zł</p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+</section>
+<!-- koniec sekcji Prasy --> 
+
+													<!-- Początek sekcji Siewniki --> 
+
+
+       <section id="Siewniki" class="container mx-auto p-5">
+        	<h2 class="text-3xl font-semibold text-center mb-5">Siewniki</h2>
+        	<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- dodana maszyna  --> 
+
+
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <a href="IMAGES//Siewniki//KUHN//1.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Siewniki//KUHN//2.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Siewniki//KUHN//3.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- trzecie zdjęcie -->  
+                <a href="IMAGES//Siewniki//KUHN//4.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie -->  
+                <a href="IMAGES//Siewniki//KUHN//5.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie --> 
+                    <img src="IMAGES//Siewniki//KUHN//1.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- Zdjęcie miniaturka na stronie głównej --> 
+            </a>
+                <h3 class="text-xl font-bold mt-3">Siewnik Kuhn</h3>
+                <p class="text-gray-600">Nowoczesny traktor z wysoką wydajnością.</p> <!-- opis maszyny--> 
+                <p class="text-green-700 font-bold mt-2">Cena: 40 000 zł </p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna --> 
+
+<!-- dodana maszyna  --> 
+
+
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <a href="IMAGES//Siewniki//Sulky//1.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Siewniki//Sulky//2.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Siewniki//Sulky//3.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- trzecie zdjęcie -->  
+                <a href="IMAGES//Siewniki//Sulky//4.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie -->  
+                <a href="IMAGES//Siewniki//Sulky//5.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie --> 
+                    <img src="IMAGES//Siewniki//Sulky//1.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- Zdjęcie miniaturka na stronie głównej --> 
+            </a>
+                <h3 class="text-xl font-bold mt-3">Siewnik Sulky</h3>
+                <p class="text-gray-600">Nowoczesny Siewnik z wysoką wydajnością.</p> <!-- opis maszyny--> 
+                <p class="text-green-700 font-bold mt-2">Cena: 20 000 zł </p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna --> 
+<!-- dodana maszyna  --> 
+
+
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <a href="IMAGES//Siewniki//AMAZON//1.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- pierwsze zdjęcie --> 
+                <a href="IMAGES//Siewniki//AMAZON//2.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- drugie zdjęcie --> 
+                <a href="IMAGES//Siewniki//AMAZON//3.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- trzecie zdjęcie -->  
+                <a href="IMAGES//Siewniki//AMAZON//4.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie -->  
+                <a href="IMAGES//Siewniki//AMAZON//5.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- czwarte zdjęcie --> 
+                    <img src="IMAGES//Siewniki//AMAZON//1.jpg" data-lightbox="maszyny" data-title="Traktor John Deere"> <!-- Zdjęcie miniaturka na stronie głównej --> 
+            </a>
+                <h3 class="text-xl font-bold mt-3">Siewnik AMAZON</h3>
+                <p class="text-gray-600">Nowoczesny Siewnik z wysoką wydajnością.</p> <!-- opis maszyny--> 
+                <p class="text-green-700 font-bold mt-2">Cena: 20 000 zł </p>
+               <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+              </div>
+<!-- koniec dodania maszyna --> 
+            
+</section>
+													<!-- koniec sekcji Siewniki --> 
+
+
+
+        </div>
+
+    </section>
+    
+    <section id="czesci" class="container mx-auto p-5">
+        <h2 class="text-3xl font-semibold text-center mb-5">Części Rolnicze</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    </section>	
+
+       <section id="Filtry" class="container mx-auto p-5">
+        	<h2 class="text-3xl font-semibold text-center mb-5">Filtry</h2>
+        	<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="https://example.com/filtr.jpg" alt="Filtr oleju" class="w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mt-3">Filtr oleju</h3>
+                <p class="text-gray-600">Wysokiej jakości filtr do maszyn rolniczych.</p>
+                <p class="text-green-700 font-bold mt-2">Cena: 120 zł</p>
+                <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+            </div>
+
+           <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="https://example.com/opona.jpg" alt="Opona rolnicza" class="w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mt-3">Opona rolnicza</h3>
+                <p class="text-gray-600">Wytrzymała opona do traktorów i maszyn.</p>
+                <p class="text-green-700 font-bold mt-2">Cena: 2 500 zł</p>
+                <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+            </div>
+
+           <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="https://example.com/opona.jpg" alt="Opona rolnicza" class="w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mt-3">Opona rolnicza</h3>
+                <p class="text-gray-600">Wytrzymała opona do traktorów i maszyn.</p>
+                <p class="text-green-700 font-bold mt-2">Cena: 2 500 zł</p>
+                <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+            </div>
+
+           <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="https://example.com/opona.jpg" alt="Opona rolnicza" class="w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mt-3">Opona rolnicza</h3>
+                <p class="text-gray-600">Wytrzymała opona do traktorów i maszyn.</p>
+                <p class="text-green-700 font-bold mt-2">Cena: 2 500 zł</p>
+                <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+            </div>
+	</section> 
+
+</section> 
+    <section id="Paski Klinowe" class="container mx-auto p-5">
+        <h2 class="text-3xl font-semibold text-center mb-5">Paski Klinowe</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    		
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="https://example.com/opona.jpg" alt="Opona rolnicza" class="w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mt-3">Opona rolnicza</h3>
+                <p class="text-gray-600">Wytrzymała opona do traktorów i maszyn.</p>
+                <p class="text-green-700 font-bold mt-2">Cena: 2 500 zł</p>
+                <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="https://example.com/pasek.jpg" alt="Pasek klinowy" class="w-full h-48 object-cover">
+                <h3 class="text-xl font-bold mt-3">Pasek klinowy</h3>
+                <p class="text-gray-600">Niezbędny element układu napędowego.</p>
+                <p class="text-green-700 font-bold mt-2">Cena: 150 zł</p>
+                <button class="bg-green-600 text-white px-4 py-2 mt-3 w-full rounded">Dodaj do koszyka</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="kontakt" class="container mx-auto p-5">
+    <h2 class="text-3xl font-semibold text-center mb-5">Kontakt</h2>
+    <div class="flex justify-between">
+        <!-- Informacje po lewej stronie -->
+        <div class="flex-1">
+            <p>Jakub Jurczyk</p>
+            <p>Telefon: <a href="tel:+48 787 911 019">+48 787 911 019</a></p>
+            <p>E-mail: <a href="mailto:PLJurczykJ@gmail.com">PLJurczykJ@gmail.com</a></p>
+        </div>
+        <!-- Informacje na środku -->
+        <div class="flex-1 text-center">
+            <p>Sklep części</p>
+            <p>Telefon: <a href="tel:+48 516 148 448">+48 516 148 448</a></p>
+            <p>E-mail: <a href="mailto:Ewelina.Walada@interia.pl">Ewelina.Walada@interia.pl</a></p>
+        </div>
+        <!-- Informacje po prawej stronie -->
+        <div class="flex-1 text-right">
+            <p>Robert Walada Maszyny</p>
+            <p>Telefon: <a href="tel:+48 605 593 387">+48 605 593 387</a></p>
+            <p>E-mail: <a href="mailto:Robert.Walada@interia.pl">Robert.Walada@interia.pl</a></p>
+	    <p>Strona: <a href="https://walada.otomoto.pl" target="_blank">walada.otomoto.pl</a></p>
+        </div>
+
+	</div>
+<div class="mt-5 text-center">
+        <p>Adres: Łagiewniki 132/2, 97-512 Kodrąb</p>
+    </div>
+</section>
+<!-- Osadzona mapa Google -->
+<div class="container mx-auto p-5">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.347349274448!2d19.563968877090545!3d51.08359687172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4719fd58b939310b%3A0xabd2501f9b7a16fd!2sWALADA%20Sprzeda%C5%BC%20Cz%C4%99%C5%9Bci%20i%20Maszyn%20Rolniczych!5e0!3m2!1spl!2spl!4v1739391970454!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
+
+ 
+    </section>
+    
+    <footer class="bg-green-700 text-white text-center p-4 mt-6">
+        &copy; 2025 AGRO JURAS - Wszystkie prawa zastrzeżone.
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
